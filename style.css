@@ -1,0 +1,318 @@
+body{
+    /* background-image: url("../nitpic.jpg"); */
+    image-resolution: ;
+    image-rendering: auto;
+    background-color: rgba(172, 92, 92, 0.568);
+    background-repeat: no-repeat;
+    background-position: 20 px 10px 15px 7px;
+}
+
+.welcomebar
+{
+
+    position: sticky;
+    top:15%;
+    display: flex;
+    
+    /* left: 170px;
+    right: 200px;
+    bottom:auto;  */
+
+    height:105px;
+    width: 70%;
+    align-items:inline;
+    background-color: #345de2;
+
+
+    border-color: red;
+    border: 5 px red;
+    border-radius: 10px;
+    border-style: dashed;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left:10px;
+    margin-right:300px;
+    padding: 5px;
+}
+
+.pic
+{
+    border: black dashed 2px;
+    background-image: url("../nitlogo.jpg");
+    width:auto;
+    height:auto;
+    top: 2px;
+    left: 3px;
+    right: 70%;
+    bottom: auto;
+    margin-left: 5px;
+
+}
+
+.welcome
+{
+    
+    border: rgb(89, 11, 235);
+    border-style: solid;
+    border: 5px;
+    width:auto;
+    height: 100px;
+    top: 20%;
+    left: auto;
+    right: 5px;
+    bottom: auto;
+    margin-right: 4px;
+    padding-left: 4%;
+    padding-right: 2%;
+    padding-top: 7px;
+    align-items: center;
+    font-size: 20px;
+
+
+
+}
+
+/* .nav
+{
+    display: inline block ;
+    position: fixed;
+    background:rgb(82, 209, 8);
+    border: solid green;
+    width:100%;
+    height: 6%;
+    align-items: baseline;
+    margin: 0;
+    top: 0%;
+
+} */
+
+.navbar
+{
+    position: fixed;
+    padding-top: 30%;
+    border: green 7px solid;
+    background: rgb(236, 157, 11);
+    align-items: center;
+    height: 50px;
+    width: 70%;
+    justify-content: center;
+    margin: auto;
+    padding:10px;
+    list-style: none;
+    
+
+}
+
+
+
+a:hover
+{
+    background:rgb(185, 23, 23);
+    color: rgb(12, 43, 221);
+
+}
+a:active
+{
+    font-size: 150%;
+    font: cursive;
+
+}
+
+
+/* li about
+{
+    display: block;
+} */
+
+
+.login
+{
+
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 200px;
+    position: fixed;
+    top: 48%;
+    left: 10%;
+    padding: 5px;
+    border: red solid 5px;
+    text-align:center;
+    font-size: 20px;
+
+
+
+}
+
+.staff
+{
+    direction: inherit;
+    margin: auto;
+    height: 75px;
+    width: 70px;
+    padding: 5px;
+    border: rgb(10, 240, 60) solid 5px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.student
+{
+    direction: inherit;
+    margin: auto;
+    height: 75px;
+    width: 90px;
+    padding: 5px;
+    border: rgb(12, 211, 12) solid 5px;
+    margin-top: 10px;
+    font-size: 16px;
+
+}
+
+.newreg
+{
+    margin: auto;
+    height: 70px;
+    width: 130px;
+    padding: 5px;
+    border: rgb(13, 221, 41) solid 5px;
+    margin-top: 10px;
+    font-size: 16px;
+
+}
+.self
+{
+    position: fixed;
+    margin: auto;
+    height: 185px;
+    width: 190px;
+    padding: 5px;
+    border: rgb(235, 212, 8) solid 5px;
+    margin-top: 50px;
+    top: 40%;
+    left: 40%;
+    background-color: rgb(34, 170, 204);
+}
+
+.gmap
+{
+    position: fixed;
+    top:83%;
+    left:60%;
+    border:green solid 3px;
+    height: 30px;
+    width: 10%;
+    padding: 10px;
+    /* left:30 px; */
+    margin-top:10px;
+    background-color: rgb(110, 150, 110);
+    /* bottom: 10%;
+    top:800px; */
+
+}
+
+.photo
+{
+    position: relative;
+    height: 250px;
+    width: 17%;
+    border: black;
+    border-style: solid;
+    right:auto;
+    left: 80%;
+    margin-right: 50px;
+    margin bottom: 30px;
+    background-color: #ff0756;
+
+
+}
+.facilities
+{
+    position: relative;
+    height: 180px;
+    width: 180px;
+    border: black;
+    border-style: solid;
+    right:auto;
+    left: 80%;
+    margin-top: 20px;
+    margin bottom: 10px;
+    background-color: #963ef3;
+
+}
+
+.b1
+{
+    position: relative;
+    height: 180px;
+    width: 180px;
+    border: black;
+    border-style: solid;
+    right:auto;
+    left: 80%;
+    margin-top: 20px;
+    margin bottom: 10px;
+    background-color: #45fea8;
+}
+.b2
+{
+    position: relative;
+    height: 180px;
+    width: 180px;
+    border: black;
+    border-style: solid;
+    right:auto;
+    left: 80%;
+    margin-top: 20px;
+    margin bottom: 10px;
+    background-color: #963ef3;
+
+}
+.b3
+{
+    position: relative;
+    height: 180px;
+    width: 180px;
+    border: black;
+    border-style: solid;
+    right:auto;
+    left: 80%;
+    margin-top: 20px;
+    margin bottom: 10px;
+    background-color: #54ef54;
+}
+.b4
+{
+    position: relative;
+    height: 180px;
+    width: 180px;
+    border: black;
+    border-style: solid;
+    right:auto;
+    left: 80%;
+    margin-top: 20px;
+    margin bottom: 10px;
+    background-color: #963ef3;
+}
+
+.copy
+{
+    position: fixed;
+    height: 30px;
+    width: 100px;
+    border: dotted 2px solid green;
+}
+
+.foot
+{
+    
+
+}
+
+.nit
+{
+    font-size: 35px;
+    font-style:italic;
+
+}
