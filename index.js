@@ -3,6 +3,7 @@ const http=require('http')
 const express=require('express')
 const app=express();
 const pug=require('pug');
+const ejs=require('ejs');
 const bodyparser=require('body-parser')
 var jsonparser=bodyparser.json()
 var urlencodedparser=bodyparser.urlencoded({extended:true})
@@ -11,7 +12,12 @@ const session=require('express-session')
 const flash=require('express-flash')
 const methodoverride=require('method-override')
 const bcrypt=require('bcrypt')
+var mongoose = require('mongoose');
+const { stringify } = require('querystring');
 
+
+app.set('veiw engine','ejs')
+// app.set()
 
 // const initialisePassport=require('./passport-config')
 // initialisePassport(
@@ -25,7 +31,30 @@ const bcrypt=require('bcrypt')
 // app.use(flash)
 
 
+mongoose.connect("mongodb://localhost:27017/",(err,client)=> {
+    if(!err){
+        console.log("succesfully connected")
+    }
+    else console.log("error in connection with database")
+})
 
+
+var myschema=mongoose.Schema({
+    firstname:String,
+    lastname:String,
+    username:String,
+    dob:Date,
+    password:String,
+
+})
+
+var mydb=mongoose.model('mydb', myschema);
+var mydatabase=new mydb({ name:mydatabase});
+console.log(mydatabase.name);
+
+mydatabase.save(function(err,mydatabase){
+    if(err) return console.error(err);
+})
 
 
 const port=80

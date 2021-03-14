@@ -3,10 +3,115 @@
 
 <head>
 
+    <style>
+        .enroll_header {
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+
+        }
+
+        .body {
+            text-align: center;
+            align-content: center;
+        }
+
+        .form_div {
+
+            position: relative;
+            width: 50%;
+            align-items: center;
+            border: 10px;
+            border: solid;
+            padding-top: 3%;
+            margin: auto;
+           
+        }
+        .form{
+            border: 10px solid black;
+        }
+
+        .form_header {
+            text-align: center;
+
+        }
+
+        .form_action {
+
+            text-align: center;
+            align-content: center;
+            width: 50%;
+            display: contents;
+            
+        }
+
+
+        .name {
+            width: auto;
+            margin-bottom: 2%;
+        }
+
+        .first_name {
+
+            width: 100%;
+            height: auto;
+            margin-bottom: 1%;
+        }
+
+        .username {
+
+
+            width: 100%;
+            height: 3%;
+            margin-bottom: 1%;
+        }
+
+        .dob {
+
+            width: 100%;
+            height: 3%;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        .password {
+
+
+            width: 100%;
+            height: auto;
+            margin-bottom: 1%;
+        }
+
+        .cpassword {
+
+            width: 100%;
+            height: auto;
+            margin-bottom: 1%;
+
+        }
+
+        .login {
+
+            width: 100%;
+            margin-bottom: 2%;
+            text-align: center;
+
+        }
+
+        .back {
+
+            width: 100%;
+            text-align: center;
+            margin-bottom: 2%;
+        }
+    </style>
 </head>
 
 <body>
-    <H2>ENROLL YOURSELF TO THE HEALTH PORTAL</H2>
+    <H2 class="enroll_header">ENROLL YOURSELF TO THE HEALTH PORTAL</H2>
     <!-- <label for="COURSE">SELECT YOUR COURSE</label>
     <SELEct NAME="COURSE">
         <OPTIOn>BTECH</OPTIOn>
@@ -17,34 +122,69 @@
 
     </SELEct> -->
 
-    <DIV>
+    <div class="form_header">
+        <h1>ENTER CREDENTIALS HERE</h1>
+    </div>
 
-        <div class="h"><h1>enter credentials here</h1></div>
-        <!-- <div><label for="credentials">enter your credentials as asked</label></div> -->
-        <img src="C:\Users\shivam\OneDrive\Desktop\health management system/nitlogo.jpg" alt="nit kkr">
-        
-        <form action="/newregistration"  method="POST" >
-            <label for="firstname">firstname</label>
-            <input type="text" name="firstname" placeholder="first name"><br>
-            <input type="text" name ="lastname", placeholder="last name"><br>
-            <label for="username">email</label>
-            <input type="email", name="username", placeholder="email as username"><br>
-            <input type="date", name="dob", placeholder="DOB"><br>
-            <br><br>
-            <input type="password" name="password"  placeholder="password"><br>
-            <input type="password" name="cpassword" placeholder="confirm password">
-            <br><br>
-            <input type="submit",value="submit">
-        </form>
+    <!-- <div><label for="credentials">enter your credentials as asked</label></div> -->
+    <!-- <img src="C:\Users\shivam\OneDrive\Desktop\health management system/nitlogo.jpg" alt="nit kkr"> -->
+
+    <DIV class="form_div">
+
+        <div class="form_action">
+            <form action="/newregistration" method="POST">
+                <div class="name">
+                    <div class="first_name">
+                        <input type="text" name="firstname" placeholder="first name"><br>
+                    </div>
+                    <div class="last_name">
+                        <input type="text" name="lastname" , placeholder="last name"><br>
+                    </div>
+
+                </div>
+
+                <div class="username">
+                    <input type="email" , name="username" , placeholder="email as username">
+                </div>
+
+                <div class="roll">
+                    <input type="number" , name="roll" , placeholder="Roll No." value="roll">
+                    <br><br>
+                </div>
+
+                <div class="password">
+                    <input type="password" name="password" placeholder="password">
+                </div>
+
+                <div class="cpassword">
+                    <input type="password" name="cpassword" placeholder="confirm password">
+                </div>
+
+                <div class="submit">
+                    <input type="submit" ,value="submit">
+                </div>
+
+
+            </form>
+        </div>
+
+        <div class="login">
+            <a href="studentlogin">login</a>
+        </div>
+        <div class="back">
+            <a href="/" class="back">BACK TO THE HOME PAGE</a>
+        </div>
+
     </DIV>
-    <a href="studentlogin">login</a>
+
+
 
 
 </body>
 
+
 <footer>
-    <a href="/" class="back">BACK TO THE HOME
-        PAGE</a>
+
 </footer>
 
 </html>

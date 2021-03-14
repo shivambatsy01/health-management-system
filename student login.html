@@ -1,21 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        .body {
+            margin-top: 10%;
+            background-color: grey;
+        }
+
+        .login {
+            text-align: center;
+            color: rgb(116, 25, 201);
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 2%;
+            margin-top: 5%;
+            font-size: 100%;
+            font-family: inherit;
+            border: 5px solid lightblue;
+            border-radius: 10%;
+            padding-top: 1%;
+            padding-bottom: 1%;
+
+        }
+
+        .form {
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            margin-top: 1%;
+            width: 50%;
+            margin: auto;
+            border: 5px solid rgb(9, 42, 224);
+            border-radius: 10%;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            background-color: rgb(11, 211, 211);
+        }
+
+        .form_action {}
+
+        .email {
+            margin-top: 1%;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            margin-bottom: 1%;
+            border: solid 3px rgb(182, 12, 12);
+        }
+
+        .password {
+            margin-top: 2%;
+            margin-bottom: 3%;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            border: solid 3px rgb(182, 12, 12);
+        }
+
+        .submit {
+            margin-top: 1%;
+            margin-bottom: 1%;
+            width: 100%;
+            
+
+        }
+
+        .mybutton {
+            width: 50%;
+            margin: auto;
+            border: solid 3px rgb(182, 12, 12);
+            left: auto;
+        }
+
+        .button{
+
+        }
+
+        .home {
+            margin-top: 2%;
+            margin-bottom: 1%;
+            width: 20%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            border: 1px solid rgb(18, 189, 219);
+            border-radius: 20%;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .enroll {
+            margin-top: 2%;
+            margin-bottom: 2%;
+            width: 20%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            border: 1px solid rgb(18, 189, 219);
+            border-radius: 20%;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>welcome to login</h1>
+    <div class="login">
+        <h1>ENTER DETAILS TO LOGIN</h1>
+    </div>
 
-    <form action="/loginwelcome" method="POST">
-        <input type="email" placeholder="email">
-        <input type="text" placeholder="password">
-    </form>
+    <div class="form">
+        <form class='form_action' action="/loginwelcome" method="POST">
 
 
-    <a href="/">back to home</a> <br>
-    <a href="newregistration">enroll yourself here</a> 
+            <div class="email">
+                <input type="email" placeholder="email"  style="width: -webkit-fill-available;margin: auto;">
+            </div>
+
+            <div class="password">
+                <input type="text" placeholder="password"  style="width: -webkit-fill-available;margin: auto;">
+            </div>
+
+            <div class="submit">
+                <div class="mybutton">
+                    <input type="button" value="submit" style="width: -webkit-fill-available;margin: auto;">
+                    <!-- <input type="button" value="submit" style="width: max-content"> -->
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+
+
+    <div class="home">
+        <a href="/">back to home</a>
+    </div>
+
+    <div class="enroll">
+        <a href="newregistration">enroll yourself here</a>
+    </div>
+
+
+
+
+
 </body>
 
 </html>
